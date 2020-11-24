@@ -1,0 +1,35 @@
+[16-Nov-2019 06:06:04 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[16-Nov-2019 19:53:47 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[18-Nov-2019 01:47:37 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[18-Nov-2019 15:38:41 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[13-Dec-2019 11:55:22 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[15-Dec-2019 12:22:39 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[16-Dec-2019 15:41:23 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[13-Jan-2020 17:36:53 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[14-Jan-2020 02:22:16 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[15-Jan-2020 19:47:22 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[16-Jan-2020 05:15:38 Etc/GMT] PHP Fatal error:  Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[17-Apr-2020 09:41:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[18-Apr-2020 03:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[20-Apr-2020 07:48:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[25-Apr-2020 00:03:17 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[25-Apr-2020 17:51:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/404.php on line 10
+[10-Jun-2020 05:04:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/team4xdj/public_html/wp-content/themes/travel-booking-pro/index.php on line 15

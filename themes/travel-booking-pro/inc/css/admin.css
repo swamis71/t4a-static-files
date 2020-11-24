@@ -1,0 +1,76 @@
+/**
+* Admin Style
+*/
+.clearfix:after, .clearfix:before{ 
+    display : table; content:"";
+}
+.clearfix:after{ 
+    clear : both;
+}
+.clearfix{*zoom:1}
+
+.float-left{
+    float:left;
+}
+.bold-label{
+    font-weight:bold;
+}
+.input_label{
+    padding: 5px 6px 0 0;
+}
+.below_row_input select{
+    width: 400px;
+}
+.below_row_input input{
+    width:500px;
+} 
+
+/** Radio Image Button */
+.page-meta-box.form-table td{
+	padding: 5px;
+}
+
+.f13{
+	font-size: 13px !important; 
+	line-height: 16px
+}
+
+.radio-image-wrapper{
+	margin-right: 25px; 
+	float: left;
+}
+
+.hide-radio{
+	position: relative;
+	margin-bottom: 6px;
+}
+
+.hide-radio img, .hide-radio label{
+	display: block;
+}
+
+.hide-radio input[type="radio"]{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+}
+
+.hide-radio input[type=radio] + label {
+	border: 3px solid #F1F1F1;
+}
+
+.hide-radio input[type=radio]:checked + label {
+  border: 3px solid #CCC;
+}
+
+/* Gallery Metabox */
+div#travel_booking_pro_team_gallery li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    cursor: move;
+}
+
+.ui-widget.ui-datepicker{z-index: 9999 !important;}

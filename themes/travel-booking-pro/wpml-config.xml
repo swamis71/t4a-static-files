@@ -1,0 +1,166 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="0">tb_testimonial</custom-type>
+    <custom-type translate="0">tb_team</custom-type>
+    <custom-type translate="1">trip</custom-type>
+    <custom-type translate="1">booking</custom-type>
+    <custom-type translate="1">customer</custom-type>
+    <custom-type translate="1">enquiry</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">destination</taxonomy>
+    <taxonomy translate="1">activities</taxonomy>
+    <taxonomy translate="1">trip_types</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="ignore">_tb_team_position</custom-field>
+    <custom-field action="ignore">_tb_team_social</custom-field>
+    <custom-field action="ignore">_tb_team_gallery_ids</custom-field>
+    <custom-field action="ignore">_tb_team_gallery_title</custom-field>
+  </custom-fields>
+  <admin-texts>
+    <key name="theme_mods_travel-booking-pro">
+      <key name="0"/>
+      <key name="nav_menu_locations">
+        <key name="primary"/>
+      </key>
+      <key name="custom_css_post_id"/>
+      <key name="header_social_links">
+        <key name="*">
+          <key name="font"/>
+          <key name="link"/>
+        </key>
+      </key>
+      <key name="dynamic_sidebars">
+        <key name="*">
+          <key name="name"/>
+        </key>
+      </key>
+      <key name="ct_social_links">
+        <key name="*">
+          <key name="font"/>
+          <key name="link"/>
+        </key>
+      </key>
+      <key name="slider_pages">
+        <key name="*">
+          <key name="page"/>
+        </key>
+      </key>
+      <key name="slider_custom">
+        <key name="*">
+          <key name="thumbnail"/>
+          <key name="title"/>
+          <key name="link"/>
+        </key>
+      </key>
+      <key name="header_layout"/>
+      <key name="header_text"/>
+      <key name="custom_logo"/>
+      <key name="ed_header_search"/>
+      <key name="header_phone"/>
+      <key name="ed_header_social_links"/>
+      <key name="sidebars_widgets">
+        <key name="time"/>
+        <key name="data">
+          <key name="wp_inactive_widgets"/>
+          <key name="sidebar">
+            <key name="*"/>
+          </key>
+          <key name="about"/>
+          <key name="cta-one"/>
+          <key name="cta-two"/>
+          <key name="client"/>
+          <key name="about-intro"/>
+          <key name="about-client"/>
+          <key name="about-service"/>
+          <key name="footer-one"/>
+          <key name="footer-two"/>
+          <key name="footer-three"/>
+          <key name="footer-four"/>
+        </key>
+      </key>
+      <key name="ed_banner_section"/>
+      <key name="banner_newsletter"/>
+      <key name="slider_type"/>
+      <key name="slider_cat"/>
+      <key name="slider_caption"/>
+      <key name="slider_readmore"/>
+      <key name="popular_desc"/>
+      <key name="ed_popular_demo"/>
+      <key name="popular_post_one"/>
+      <key name="popular_readmore_label"/>
+      <key name="popular_view_all_label"/>
+      <key name="popular_title"/>
+      <key name="popular_view_all_url"/>
+      <key name="feature_title"/>
+      <key name="feature_desc"/>
+      <key name="ed_featured_demo"/>
+      <key name="featured_cat"/>
+      <key name="featured_readmore"/>
+      <key name="featured_view_all"/>
+      <key name="trip_type"/>
+      <key name="choose_trip_1"/>
+      <key name="deal_title"/>
+      <key name="deal_desc"/>
+      <key name="ed_deal_demo"/>
+      <key name="deal_post_one"/>
+      <key name="deal_readmore"/>
+      <key name="deal_view_all_label"/>
+      <key name="destination_title"/>
+      <key name="destination_desc"/>
+      <key name="ed_destination_demo"/>
+      <key name="destination_one"/>
+      <key name="activities_title"/>
+      <key name="activities_desc"/>
+      <key name="ed_activities_demo"/>
+      <key name="activities_one"/>
+      <key name="testimonial_section_title"/>
+      <key name="testimonial_section_subtitle"/>
+      <key name="testimonial_post_order"/>
+      <key name="testimonial_view_all"/>
+      <key name="blog_section_title"/>
+      <key name="blog_section_subtitle"/>
+      <key name="blog_section_readmore"/>
+      <key name="blog_view_all"/>
+      <key name="about_testimonial_section_title"/>
+      <key name="about_team_section_title"/>
+      <key name="about_team_section_subtitle"/>
+      <key name="about_team_post_order"/>
+      <key name="ed_core_member"/>
+      <key name="core_member_section_title"/>
+      <key name="core_member_section_subtitle"/>
+      <key name="our_team_section_title"/>
+      <key name="our_team_section_subtitle"/>
+      <key name="pagination_type"/>
+      <key name="load_more_label"/>
+      <key name="loading_label"/>
+      <key name="nomore_post_label"/>
+      <key name="readmore"/>
+      <key name="related_post_section_title"/>
+      <key name="recent_post_section_title"/>
+      <key name="ed_category_meta"/>
+      <key name="ed_prefix_archive"/>
+      <key name="ed_author_section"/>
+      <key name="ed_related_post_section"/>
+      <key name="ed_recent_post_section"/>
+      <key name="ed_author_comments"/>
+      <key name="404_popular_text"/>
+      <key name="ed_404_popular"/>
+      <key name="breadcrumb_home_text"/>
+      <key name="body_bg"/>
+      <key name="ed_ct_google_map"/>
+      <key name="marker_title"/>
+      <key name="ct_detail_title"/>
+      <key name="ct_phone"/>
+      <key name="ct_address"/>
+      <key name="ct_email"/>
+      <key name="footer_copyright"/>
+      <key name="ed_author_link"/>
+      <key name="ed_wp_link"/>
+      <key name="banner_title"/>
+      <key name="banner_btn_label"/>
+      <key name="banner_btn_url"/>
+    </key>
+  </admin-texts>
+</wpml-config>

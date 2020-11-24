@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #333;
+        stroke-width: 2px;
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-1394 -8853)">
+    <g id="Ellipse_513_copy_5" data-name="Ellipse 513 copy 5" class="cls-1" transform="translate(1394 8853)">
+      <circle class="cls-3" cx="20" cy="20" r="20"/>
+      <circle class="cls-4" cx="20" cy="20" r="19"/>
+    </g>
+    <path id="Shape_8_copy_10" data-name="Shape 8 copy 10" class="cls-2" d="M1412.625,8878.323l5.337-5.332-5.337-5.331"/>
+  </g>
+</svg>
