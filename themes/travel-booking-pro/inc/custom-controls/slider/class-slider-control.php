@@ -45,7 +45,7 @@ if ( ! class_exists( 'Travel_Booking_Pro_Slider_Control' ) ) {
         
         public function enqueue() {            
             wp_enqueue_style( 'travel-booking-pro-slider', get_template_directory_uri() . '/inc/custom-controls/slider/slider.css', null );
-            wp_enqueue_script( 'travel-booking-pro-slider', get_template_directory_uri() . '/inc/custom-controls/slider/slider.js', array( 'jquery' ), false, true ); //for slider                
+            custom_enqueue_script( 'travel-booking-pro-slider', get_template_directory_uri() . '/inc/custom-controls/slider/slider.js', array( 'jquery' ), false, true ); //for slider                
         }
         
 		protected function content_template() {

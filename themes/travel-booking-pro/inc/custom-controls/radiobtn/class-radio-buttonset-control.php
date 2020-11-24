@@ -42,7 +42,7 @@ if ( ! class_exists( 'Travel_Booking_Pro_Radio_Buttonset_Control' ) ) {
         
         public function enqueue() {            
             wp_enqueue_style( 'radio-btn', get_template_directory_uri() . '/inc/custom-controls/radiobtn/radio-btn.css', null );
-            wp_enqueue_script( 'radio-buttonset', get_template_directory_uri() . '/inc/custom-controls/radiobtn/radio-buttonset.js', array( 'jquery' ), false, true ); //for radio buttonset        
+            custom_enqueue_script( 'radio-buttonset', get_template_directory_uri() . '/inc/custom-controls/radiobtn/radio-buttonset.js', array( 'jquery' ), false, true ); //for radio buttonset        
         }
         
         protected function content_template() {

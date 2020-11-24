@@ -28,7 +28,7 @@ if ( ! class_exists( 'Travel_Booking_Pro_Customizer_Reset' ) ) {
 		}
 
 		public function customize_controls_print_scripts() {
-			wp_enqueue_script( 'travel-booking-pro-customizer-reset', get_template_directory_uri() . '/inc/customizer/customizer-reset/js/customizer-reset.js', array( 'jquery' ), '20171201' );
+			custom_enqueue_script( 'travel-booking-pro-customizer-reset', get_template_directory_uri() . '/inc/customizer/customizer-reset/js/customizer-reset.js', array( 'jquery' ), '20171201' );
 			wp_localize_script( 'travel-booking-pro-customizer-reset', 'CustomizerReset', array(
 				'reset'   => __( 'Reset', 'travel-booking-pro' ),
 				'confirm' => __( "Attention! This will remove all customizations ever made via customizer to this theme!\n\nThis action is irreversible!", 'travel-booking-pro' ),

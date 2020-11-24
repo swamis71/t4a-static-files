@@ -19,7 +19,7 @@ class Travel_Booking_Pro_Sortable extends WP_Customize_Control {
     
 	public function enqueue() {
 
-		wp_enqueue_script( 'travel-sortable', get_template_directory_uri() . '/inc/custom-controls/sortable/sortable.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
+		custom_enqueue_script( 'travel-sortable', get_template_directory_uri() . '/inc/custom-controls/sortable/sortable.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
 		wp_enqueue_style( 'travel-sortable-css', get_template_directory_uri() . '/inc/custom-controls/sortable/sortable.css', null );
 
 	}

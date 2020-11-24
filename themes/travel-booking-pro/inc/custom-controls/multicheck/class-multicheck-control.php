@@ -39,7 +39,7 @@ if ( ! class_exists( 'Travel_Booking_Pro_MultiCheck_Control' ) ) {
 		}
         
         public function enqueue() {            
-            wp_enqueue_script( 'travel-booking-pro-multicheck', get_template_directory_uri() . '/inc/custom-controls/multicheck/multicheck.js', array( 'jquery' ), false, true ); //for slider        
+            custom_enqueue_script( 'travel-booking-pro-multicheck', get_template_directory_uri() . '/inc/custom-controls/multicheck/multicheck.js', array( 'jquery' ), false, true ); //for slider        
         }
         
 		protected function content_template() {

@@ -135,7 +135,7 @@ class Travel_Booking_Customizer_Notice {
 
 		wp_enqueue_script( 'updates' );
 
-		wp_enqueue_script( 'travel-booking-customizer-notice', get_template_directory_uri() . '/inc/customizer-plugin-recommend/customizer-notice/js/customizer-notice.js', array( 'customize-controls' ), TRAVEL_BOOKING_PRO_THEME_VERSION );
+		custom_enqueue_script( 'travel-booking-customizer-notice', get_template_directory_uri() . '/inc/customizer-plugin-recommend/customizer-notice/js/customizer-notice.js', array( 'customize-controls' ), TRAVEL_BOOKING_PRO_THEME_VERSION );
 		wp_localize_script(
 			'travel-booking-customizer-notice', 'customizer_notice_data', array(
 				'ajaxurl'                  => admin_url( 'admin-ajax.php' ),

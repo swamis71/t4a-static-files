@@ -103,7 +103,7 @@ class Travel_Booking_Plugin_Install_Helper {
 	public function enqueue_scripts() {
 		wp_enqueue_script( 'plugin-install' );
 		wp_enqueue_script( 'updates' );
-		wp_enqueue_script( 'travel-booking-plugin-install-helper', get_template_directory_uri() . '/inc/customizer-plugin-recommend/plugin-install/js/plugin-install.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
+		custom_enqueue_script( 'travel-booking-plugin-install-helper', get_template_directory_uri() . '/inc/customizer-plugin-recommend/plugin-install/js/plugin-install.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
 		wp_localize_script(
 			'travel-booking-plugin-install-helper', 'plugin_helper',
 			array(

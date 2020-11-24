@@ -234,7 +234,7 @@ function travel_booking_pro_scripts() {
 
     wp_enqueue_style( 'jquery-mCustomScrollbar', get_template_directory_uri(). '/css' . $build . '/jquery.mCustomScrollbar' . $suffix . '.css', array(), '3.1.5' );
 
-    wp_enqueue_script( 'jquery-mCustomScrollbar', get_template_directory_uri() . '/js' . $build . '/jquery.mCustomScrollbar' . $suffix . '.js', array( 'jquery' ), '3.1.5', true ); 
+    custom_enqueue_script( 'jquery-mCustomScrollbar', get_template_directory_uri() . '/js' . $build . '/jquery.mCustomScrollbar' . $suffix . '.js', array( 'jquery' ), '3.1.5', true ); 
 
     wp_enqueue_style( 'travel-booking-pro-google-fonts', travel_booking_pro_fonts_url(), array(), null );
 
@@ -247,14 +247,14 @@ function travel_booking_pro_scripts() {
     wp_enqueue_style( 'travel-booking-pro-style', get_stylesheet_uri(), array(), TRAVEL_BOOKING_PRO_THEME_VERSION );
 
     if( $enable_lazy_load || $enable_lazy_cimage ){
-        wp_enqueue_script( 'layzr', get_template_directory_uri() . '/js' . $build . '/layzr' . $suffix . '.js', array('jquery'), '2.0.4', true );
+        custom_enqueue_script( 'layzr', get_template_directory_uri() . '/js' . $build . '/layzr' . $suffix . '.js', array('jquery'), '2.0.4', true );
     }
 
-    wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js' . $build . '/owl.carousel' . $suffix . '.js', array( 'jquery' ), '2.2.1', true );
+    custom_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js' . $build . '/owl.carousel' . $suffix . '.js', array( 'jquery' ), '2.2.1', true );
 
-    wp_enqueue_script( 'all', get_template_directory_uri() . '/js' . $build . '/all' . $suffix . '.js', array( 'jquery' ), '5.6.3', true );
+    custom_enqueue_script( 'all', get_template_directory_uri() . '/js' . $build . '/all' . $suffix . '.js', array( 'jquery' ), '5.6.3', true );
 
-    wp_enqueue_script( 'v4-shims', get_template_directory_uri() . '/js' . $build . '/v4-shims' . $suffix . '.js', array( 'jquery' ), '5.6.3', true );
+    custom_enqueue_script( 'v4-shims', get_template_directory_uri() . '/js' . $build . '/v4-shims' . $suffix . '.js', array( 'jquery' ), '5.6.3', true );
 
     if( is_page_template( 'templates/contact.php' ) ){
         $latitude      = get_theme_mod( 'latitude', 27.7204766 );
@@ -269,8 +269,8 @@ function travel_booking_pro_scripts() {
         $custom_css    = '#map-canvas{ width : 100%; height : 310px }';
 
         wp_add_inline_style( 'travel-booking-pro-style', $custom_css );
-        wp_enqueue_script( 'travel-booking-pro-google-map', '//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=' . $map_api_key );
-        wp_enqueue_script( 'travel-booking-pro-google', get_template_directory_uri() . '/js' . $build . '/google' . $suffix . '.js', array( 'jquery', 'travel-booking-pro-google-map' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );        
+        custom_enqueue_script( 'travel-booking-pro-google-map', '//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=' . $map_api_key );
+        custom_enqueue_script( 'travel-booking-pro-google', get_template_directory_uri() . '/js' . $build . '/google' . $suffix . '.js', array( 'jquery', 'travel-booking-pro-google-map' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );        
         
         $array = array(
             'latitude'     => esc_attr( $latitude ),
@@ -285,10 +285,10 @@ function travel_booking_pro_scripts() {
     }
 
     if( $onepage_menu ){
-        wp_enqueue_script( 'scroll-nav', get_template_directory_uri() . '/js'. $build .'/scroll-nav'. $suffix .'.js', array( 'jquery' ), '3.3.0', true );
+        custom_enqueue_script( 'scroll-nav', get_template_directory_uri() . '/js'. $build .'/scroll-nav'. $suffix .'.js', array( 'jquery' ), '3.3.0', true );
     }
 
-    wp_enqueue_script( 'travel-booking-pro-custom', get_template_directory_uri() . '/js' . $build . '/custom' . $suffix . '.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
+    custom_enqueue_script( 'travel-booking-pro-custom', get_template_directory_uri() . '/js' . $build . '/custom' . $suffix . '.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
 
     $array = array( 
         'rtl'          => is_rtl(),
@@ -328,7 +328,7 @@ function travel_booking_pro_scripts() {
             $max = $wp_query->max_num_pages;
         }
         
-        wp_enqueue_script( 'travel-booking-pro-ajax', get_template_directory_uri() . '/js' . $build . '/ajax' . $suffix . '.js', array('jquery'), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
+        custom_enqueue_script( 'travel-booking-pro-ajax', get_template_directory_uri() . '/js' . $build . '/ajax' . $suffix . '.js', array('jquery'), TRAVEL_BOOKING_PRO_THEME_VERSION, true );
         
         wp_localize_script( 
             'travel-booking-pro-ajax', 
@@ -353,11 +353,11 @@ function travel_booking_pro_scripts() {
 
 	if( ( is_front_page() && ! is_home() ) || is_page_template( 'templates/about.php' ) || is_page_template( 'templates/testimonial.php' ) ){
         wp_enqueue_style( 'jquery-rateyo', get_template_directory_uri() . '/inc/css/jquery.rateyo.min.css', array(), TRAVEL_BOOKING_PRO_THEME_VERSION ); 
-        wp_enqueue_script( 'jquery-rateyo', get_template_directory_uri() . '/inc/js/jquery.rateyo.min.js', array( 'jquery' ), '2.3.2', false );
+        custom_enqueue_script( 'jquery-rateyo', get_template_directory_uri() . '/inc/js/jquery.rateyo.min.js', array( 'jquery' ), '2.3.2', false );
     }
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'travel_booking_pro_scripts' );
+add_action( 'custom_enqueue_scripts', 'travel_booking_pro_scripts' );
 
 if( ! function_exists( 'travel_booking_pro_admin_scripts' ) ) :
 /**
@@ -372,19 +372,19 @@ function travel_booking_pro_admin_scripts( $hook ){
     if( $screen->id == 'tb_testimonial' ){
         wp_enqueue_style( 'jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css' );
         wp_enqueue_style( 'jquery-rateyo', get_template_directory_uri() . '/inc/css/jquery.rateyo.min.css', array(), TRAVEL_BOOKING_PRO_THEME_VERSION ); 
-        wp_enqueue_script( 'jquery-rateyo', get_template_directory_uri() . '/inc/js/jquery.rateyo.min.js', array( 'jquery' ), '2.3.2', false );
+        custom_enqueue_script( 'jquery-rateyo', get_template_directory_uri() . '/inc/js/jquery.rateyo.min.js', array( 'jquery' ), '2.3.2', false );
         $data['id'] = $post->ID;   
     }
     
     if( $hook == 'post-new.php' || $hook == 'post.php' ){
         $data ['post_type'] = $post->post_type;
         wp_enqueue_style( 'travel-booking-pro-admin', get_template_directory_uri() . '/inc/css/admin.css', array(), TRAVEL_BOOKING_PRO_THEME_VERSION );     
-        wp_enqueue_script( 'travel-booking-pro-admin', get_template_directory_uri() . '/inc/js/admin.js', array( 'jquery', 'jquery-ui-sortable', 'jquery-ui-datepicker' ), TRAVEL_BOOKING_PRO_THEME_VERSION, false );
+        custom_enqueue_script( 'travel-booking-pro-admin', get_template_directory_uri() . '/inc/js/admin.js', array( 'jquery', 'jquery-ui-sortable', 'jquery-ui-datepicker' ), TRAVEL_BOOKING_PRO_THEME_VERSION, false );
         wp_localize_script( 'travel-booking-pro-admin', 'tb_admin', $data );
     }
     
     if( $screen->id == 'tb_team' ){
-        wp_enqueue_script( 'travel-booking-pro-gallery', get_template_directory_uri() . '/inc/js/gallery.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, false );
+        custom_enqueue_script( 'travel-booking-pro-gallery', get_template_directory_uri() . '/inc/js/gallery.js', array( 'jquery' ), TRAVEL_BOOKING_PRO_THEME_VERSION, false );
         $arr = array(
             'change_image' => __( 'Change Image', 'travel-booking-pro' ),
             'remove_image' => __( 'Remove Image', 'travel-booking-pro' ),

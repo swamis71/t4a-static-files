@@ -205,12 +205,12 @@ if( ! class_exists( 'Travel_Booking_Pro_Control_Repeater' ) ) {
                             wp_enqueue_script( 'wp-color-picker' );
                             wp_enqueue_style( 'wp-color-picker' );
     					}elseif( 'font' === $field['type'] ){
-                            wp_enqueue_script( 'all', get_template_directory_uri(). '/js/all.min.js', array(), '5.6.3' );
+                            custom_enqueue_script( 'all', get_template_directory_uri(). '/js/all.min.js', array(), '5.6.3' );
     					}
     				}
     			}
     		}
-            wp_enqueue_script( 'travel-booking-pro-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
+            custom_enqueue_script( 'travel-booking-pro-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
     		wp_enqueue_style( 'travel-booking-pro-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.css', null );
     	}
     

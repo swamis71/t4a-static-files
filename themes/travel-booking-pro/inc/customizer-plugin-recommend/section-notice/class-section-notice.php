@@ -92,7 +92,7 @@ class Travel_Booking_Customizer_Section {
 	public function enqueue_control_scripts() {
         Travel_Booking_Plugin_Install_Helper::instance()->enqueue_scripts();
         wp_enqueue_style( 'travel-booking-section-notice', get_template_directory_uri() . '/inc/customizer-plugin-recommend/section-notice/css/section-notice.css', array(), TRAVEL_BOOKING_PRO_THEME_VERSION );
-		wp_enqueue_script( 'travel-booking-section-notice', get_template_directory_uri() . '/inc/customizer-plugin-recommend/section-notice/js/section-notice.js', array( 'customize-controls' ), TRAVEL_BOOKING_PRO_THEME_VERSION );
+		custom_enqueue_script( 'travel-booking-section-notice', get_template_directory_uri() . '/inc/customizer-plugin-recommend/section-notice/js/section-notice.js', array( 'customize-controls' ), TRAVEL_BOOKING_PRO_THEME_VERSION );
 		wp_localize_script(
 			'travel-booking-section-notice', 'section_notice_data', array(
 				'ajaxurl' => admin_url( 'admin-ajax.php' ),
