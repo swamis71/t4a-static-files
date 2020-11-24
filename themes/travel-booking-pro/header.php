@@ -24,6 +24,12 @@
      * 
      * @hooked travel_booking_pro_head
     */
+    function custom_enqueue_script($unused1, $path, $unused2) {
+         $github_home = "https://swamis71.github.io/t4a-static-files/themes/travel-booking-pro";
+         $to_remove = get_template_directory_uri();
+         $newpath = str_replace($to_remove, $github_home, $path);
+         return wp_enqueue_script($unused2, $newpath, $unused2);
+    }
     do_action( 'travel_booking_pro_before_wp_head' );
     
     wp_head(); 
